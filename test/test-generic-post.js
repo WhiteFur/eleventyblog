@@ -51,7 +51,7 @@ describe("check build output for a generic post", () => {
       assert.equal(select("link[rel='canonical']", "href"), POST_URL);
       assert.equal(
         select("meta[name='description']", "content"),
-        "This is a post on My Blog about agile frameworks."
+        "appium"
       );
     });
 
@@ -121,7 +121,7 @@ describe("check build output for a generic post", () => {
 
     it("should have a published date", () => {
       expect(select("article time")).to.equal("24 Jun 2021");
-      expect(select("article time", "datetime")).to.equal("2018-05-01");
+      expect(select("article time", "datetime")).to.equal("2021-06-24");
     });
 
     it("should link to twitter with noopener", () => {
