@@ -27,7 +27,7 @@ image: https://cdn.pixabay.com/photo/2020/08/30/20/54/rice-field-5530707_1280.jp
   1. 新增環境變數
       ```set -x ANDROID_HOME "/Users/baymo/Library/Android/sdk"```
   1. 安裝模擬器
-        * Open the AVD manager
+        * Open the AVD manager in Android Studio
             ![open avd](/img/android-emulator/open-avd.png "open the AVD manager")
         * Create virtual device
             ![create](/img/android-emulator/create.png "create")
@@ -42,6 +42,8 @@ image: https://cdn.pixabay.com/photo/2020/08/30/20/54/rice-field-5530707_1280.jp
             ![image](/img/android-emulator/choose-image.png "image")
         * 都不用改，直接Finish
             ![finish](/img/android-emulator/finish.png "finish")
+        * 啟動模擬器
+            ![launch-emulator](/img/android-emulator/launch-emulator.png "launch-emulator")
 
 ## Get Started
 ### Inspect layout hierarchy
@@ -52,7 +54,7 @@ image: https://cdn.pixabay.com/photo/2020/08/30/20/54/rice-field-5530707_1280.jp
 1. New Session Window
     剛剛的1.已用command line啟動server，這裡不用再Start Server，只要建client session就好
     ![new session](/img/appium/launch.png "new session")
-1. 填好config，Start Session
+1. 填好config，Start Session(在此之前需先啟動模擬器)
     ![config](/img/appium/config.png "config")
   * appPackage: play store url的id
        ![scb play store](/img/appium/scb-play-store.png "scb play store")
