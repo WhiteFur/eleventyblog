@@ -53,13 +53,7 @@
     <!-- Notably iOS UAs also contain Mac OS X -->
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "7bqh99co69");
-    </script>
+    <script src="{{ "/js/clarity.js" | addHash }}"> </script>
     <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
@@ -93,6 +87,9 @@
       </article>
     </main>
 
+    <footer>
+      <a href="/about/">{{ metadata.author.name }}</a>
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>

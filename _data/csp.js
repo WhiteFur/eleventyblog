@@ -32,11 +32,11 @@ const SELF = quote("self");
 const CSP = {
   regular: serialize([
     // By default only talk to same-origin
-    ["default-src", SELF],
+    ["default-src", "https://www.clarity.ms", SELF],
     // No plugins
     ["object-src", quote("none")],
     // Script from same-origin and inline-hashes.
-    ["script-src", SELF, /* Replaced by csp.js plugin */ "HASHES"],
+    ["script-src", SELF, "https://www.clarity.ms", /* Replaced by csp.js plugin */ "HASHES"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
