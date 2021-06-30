@@ -53,10 +53,14 @@
     <!-- Notably iOS UAs also contain Mac OS X -->
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
-    <script src="{{ "/js/clarity.js" | addHash }}"> </script>
+    <script src="{{ "/js/gtm.js" | addHash }}"> </script>
     <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LRX4W"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
       <nav>
         <div id="nav">
