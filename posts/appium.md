@@ -65,5 +65,7 @@ image: https://cdn.pixabay.com/photo/2020/08/30/20/54/rice-field-5530707_1280.jp
        ![adb devices](/img/appium/adb-devices.png "adb devices")
   * app: apk在電腦的路徑
       ~~可透過[https://apps.evozi.com/apk-downloader/](https://apps.evozi.com/apk-downloader/)將apk載到電腦裡~~ (此站的GCash版本5.38.1太舊，此時Google play上的版本為5.49.1)
-      可透過[https://apkcombo.com/tw/](https://apkcombo.com/tw/)將apk載到電腦裡
+      可透過以下服務將apk載到電腦裡
+    * [https://apkpure.com/tw/](https://apkpure.com/tw/)
+    * [https://apkcombo.com/tw/](https://apkcombo.com/tw/)
       
